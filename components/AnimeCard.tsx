@@ -22,7 +22,7 @@ function AnimeCard({ anime }: Prop) {
     <div className="max-w-sm rounded relative w-full">
       <div className="relative w-full h-[37vh]">
         <Image
-          src={anime.image.original}
+          src={`https://shikimori.one${anime.image.original}`}
           alt={anime.name}
           fill
           className="rounded-xl"
@@ -60,7 +60,7 @@ function AnimeCard({ anime }: Prop) {
               height={18}
               className="object-contain"
             />
-            <p className="text-base font-bold text-[#FFAD49]">{anime.score}</p>
+            <p className="text-base font-bold text-[#050505]">{anime.score}</p>
           </div>
         </div>
       </div>
